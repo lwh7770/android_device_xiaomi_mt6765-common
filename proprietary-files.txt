@@ -1,10 +1,11 @@
 # Offline Charging
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
-lib/libshowlogo.so
+lib/libshowlogo.so|553c24e44f9514351c87e67dd2e962742b8499d4
 lib/libsysenv_system.so
 
 # Camera
+lib/libgui.so:lib/libhui.so
 product/vendor_overlay/28/lib/libpdx_default_transport.so|5f5f1931fc40b730af2c0cbcdbf9605ffcdd1070
 
 # RIL

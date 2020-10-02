@@ -74,4 +74,8 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
             "${KANG}" --section "${SECTION}"
 fi
 
+BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
+
+sed -i 's|libgui.so|libhui.so|g' "${BLOB_ROOT}/lib/libshowlogo.so"
+
 "${MY_DIR}/setup-makefiles.sh"
